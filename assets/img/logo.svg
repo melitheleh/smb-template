@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" role="img" aria-label="SMB Forsvar og Sikkerhet">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d4e8f"/>
+      <stop offset="1" stop-color="#12284c"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield mark -->
+  <g>
+    <path d="M28 4 L50 12 V30 C50 44 40 54 28 60 C16 54 6 44 6 30 V12 Z" fill="url(#shieldGrad)"/>
+    <path d="M18 31 l7 7 14 -17" fill="none" stroke="#e0592a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="64" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#12284c" letter-spacing="1">SMB</text>
+  <text x="64" y="49" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="600" fill="#1d4e8f" letter-spacing="2.5">FORSVAR OG SIKKERHET</text>
+</svg>

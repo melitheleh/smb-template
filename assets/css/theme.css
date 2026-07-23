@@ -1,0 +1,163 @@
+/* =====================================================================
+   SMB-mal – felles tema for medlemsorganisasjoner
+   Bygget på Bootstrap 5. Design/tone inspirert av smbnorge.no.
+   ---------------------------------------------------------------------
+   REBRANDING: endre kun variablene under :root for hver organisasjon.
+   (SMB Forsvar og Sikkerhet / Norsk-Sveitsisk Handelskammer /
+    Norsk Bårebærerforening)
+   ===================================================================== */
+
+:root {
+  /* Merkefarger – bytt disse per organisasjon */
+  --brand-900: #0d1f3c;   /* mørkeste navy (footer, topbar) */
+  --brand-700: #12284c;   /* primær navy */
+  --brand-500: #1d4e8f;   /* lys blå aksent */
+  --accent:    #e0592a;   /* CTA / handlingsfarge */
+  --accent-600:#c74a20;   /* CTA hover */
+
+  /* Nøytrale */
+  --ink:      #1b2431;
+  --muted:    #5b6675;
+  --line:     #e5e9f0;
+  --surface:  #f5f7fb;
+
+  /* Typografi */
+  --font-base: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+}
+
+/* Bootstrap-overstyringer via variabler */
+:root {
+  --bs-primary: var(--brand-700);
+  --bs-body-color: var(--ink);
+  --bs-body-font-family: var(--font-base);
+  --bs-border-color: var(--line);
+}
+
+body { font-family: var(--font-base); color: var(--ink); }
+
+h1,h2,h3,h4,h5 { font-weight: 800; color: var(--brand-700); letter-spacing: -.01em; }
+.lead { color: var(--muted); }
+
+a { color: var(--brand-500); }
+a:hover { color: var(--brand-700); }
+
+/* ---------- Topbar ---------- */
+.topbar {
+  background: var(--brand-900);
+  color: #cdd8ea;
+  font-size: .82rem;
+}
+.topbar a { color: #cdd8ea; text-decoration: none; }
+.topbar a:hover { color: #fff; }
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+.navbar-brand img { height: 46px; width: auto; }
+.navbar .nav-link {
+  color: var(--brand-700);
+  font-weight: 600;
+  padding-inline: .9rem;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: var(--accent); }
+
+/* ---------- Knapper ---------- */
+.btn-brand {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+.btn-brand:hover { background: var(--accent-600); border-color: var(--accent-600); color: #fff; }
+
+.btn-outline-brand {
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  background: transparent;
+}
+.btn-outline-brand:hover { background: #fff; color: var(--brand-700); }
+
+.btn-navy {
+  background: var(--brand-700);
+  border-color: var(--brand-700);
+  color: #fff;
+  font-weight: 700;
+}
+.btn-navy:hover { background: var(--brand-900); border-color: var(--brand-900); color:#fff; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(13,31,60,.72), rgba(13,31,60,.82)),
+    url('../img/hero.svg') center/cover no-repeat;
+  padding: 6.5rem 0;
+}
+.hero h1 { color: #fff; font-size: clamp(2rem, 4vw, 3.4rem); }
+.hero p { color: #e7edf6; font-size: 1.15rem; max-width: 44rem; }
+
+/* ---------- Seksjoner ---------- */
+.section { padding: 4.5rem 0; }
+.section-alt { background: var(--surface); }
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* ---------- Medlemslogoer ---------- */
+.member-strip { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.member-logo {
+  display: flex; align-items: center; justify-content: center;
+  height: 90px; padding: 1rem;
+  filter: grayscale(1); opacity: .55; transition: .2s;
+  font-weight: 700; color: var(--muted);
+  border: 1px solid var(--line); border-radius: .5rem; background:#fff;
+}
+.member-logo:hover { filter: none; opacity: 1; color: var(--brand-700); }
+
+/* ---------- Nyhetskort ---------- */
+.news-card { border: 1px solid var(--line); border-radius: .75rem; overflow: hidden; height: 100%; background:#fff; transition:.2s; }
+.news-card:hover { box-shadow: 0 10px 30px rgba(13,31,60,.10); transform: translateY(-3px); }
+.news-card .thumb { height: 170px; background: var(--brand-500); background-size: cover; background-position:center; }
+.news-card .tag { font-size:.72rem; font-weight:700; color: var(--accent); text-transform:uppercase; letter-spacing:1px; }
+.news-card .date { font-size:.8rem; color: var(--muted); }
+.news-card h3 { font-size: 1.05rem; }
+
+/* ---------- Kort/verdier ---------- */
+.value-card { background:#fff; border:1px solid var(--line); border-radius:.75rem; padding:2rem; height:100%; }
+.value-card .icon {
+  width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background: rgba(29,78,143,.10); color: var(--brand-500); margin-bottom:1rem;
+}
+
+/* ---------- Newsletter ---------- */
+.newsletter { background: var(--brand-700); color:#fff; }
+.newsletter h2 { color:#fff; }
+.newsletter .form-control { border:0; }
+
+/* ---------- Skjema ---------- */
+.form-card { background:#fff; border:1px solid var(--line); border-radius:.9rem; padding:2.25rem; }
+.form-label { font-weight:600; color: var(--brand-700); }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--brand-900); color:#aab7cc; }
+.site-footer a { color:#aab7cc; text-decoration:none; }
+.site-footer a:hover { color:#fff; }
+.site-footer h6 { color:#fff; text-transform:uppercase; letter-spacing:1px; font-size:.8rem; }
+.site-footer img { height:44px; }
+.footer-bottom { border-top:1px solid rgba(255,255,255,.10); font-size:.82rem; }
+
+/* ---------- Diverse ---------- */
+.page-head { background: var(--surface); border-bottom:1px solid var(--line); padding: 3rem 0; }
+.social-ico { width:34px;height:34px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08); }
+.social-ico:hover { background: var(--accent); }
