@@ -30,19 +30,22 @@ SMB_mal_wp/
 
 ## Rebranding per organisasjon
 
-Alt av farger styres av CSS-variabler øverst i `assets/css/theme.css`:
+Designet følger SMB Norges profil: **rød + sort + hvit**, pille-knapper, skrå striper og fonten **Mulish**. Alt av farger styres av CSS-variabler øverst i `assets/css/theme.css`:
 
 ```css
 :root {
-  --brand-900: #0d1f3c;  /* mørkeste navy */
-  --brand-700: #12284c;  /* primærfarge */
-  --brand-500: #1d4e8f;  /* aksent */
-  --accent:    #e0592a;  /* CTA-farge */
-  --accent-600:#c74a20;  /* CTA hover */
+  --red:      #E8112D;  /* primær (SMB Norge-rød) */
+  --red-dark: #C20D24;  /* hover */
+  --red-deep: #B00C20;  /* mørk stripe */
+  --ink:      #1A1A1A;  /* tekst / overskrifter */
+  --black:    #1C1C1C;  /* footer / mørke felt */
+  --gray-100: #F4F4F5;  /* lyst seksjonsfelt */
 }
 ```
 
 For en ny organisasjon: bytt disse verdiene, erstatt `logo.svg` / `logo-white.svg`, og oppdater tekst/navn i `index.html` og `kontakt.html`.
+
+> Merk: fargene og fonten er lest av fra skjermbilder av smbnorge.no. Rødtonen (`#E8112D`) er et nært estimat – juster ved behov mot offisiell profilhåndbok. Fonten Mulish er valgt som nærmeste frie match til SMB Norges typografi.
 
 ## Se malen lokalt
 

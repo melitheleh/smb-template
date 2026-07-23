@@ -12,14 +12,7 @@
 </head>
 <body>
 
-  <!-- Topbar -->
-  <div class="topbar">
-    <div class="container d-flex justify-content-end align-items-center gap-3 py-2">
-      <a href="#"><i class="bi bi-search me-1"></i>Søk</a>
-      <a href="#"><i class="bi bi-person-circle me-1"></i>Logg inn</a>
-      <a class="btn btn-brand btn-sm px-3" href="index.html#medlemskap">Bli medlem</a>
-    </div>
-  </div>
+  <div class="topbar"></div>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
@@ -32,11 +25,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainnav">
         <ul class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#medlemsfordeler">Medlemsfordeler</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#saker">Våre saker</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#medlemmer">Medlemmer</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#medlemskap">Medlemskap</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#nytt">Siste nytt</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#om">Om oss</a></li>
           <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-brand" href="index.html#medlemskap">Bli medlem</a></li>
         </ul>
       </div>
     </div>
@@ -94,13 +88,11 @@
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="samtykke" required>
-                    <label class="form-check-label small" for="samtykke">
-                      Jeg samtykker til at opplysningene behandles i henhold til <a href="#">personvernerklæringen</a>. *
-                    </label>
+                    <label class="form-check-label small" for="samtykke">Jeg samtykker til at opplysningene behandles i henhold til <a href="#">personvernerklæringen</a>. *</label>
                   </div>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-brand btn-lg px-4">Send melding</button>
+                  <button type="submit" class="btn btn-brand btn-lg">Send melding</button>
                 </div>
                 <div class="col-12">
                   <div id="form-ok" class="alert alert-success d-none mb-0" role="alert">
@@ -112,24 +104,24 @@
           </div>
         </div>
 
-        <!-- Kontaktinfo -->
+        <!-- Kontaktinfo + nyhetsbrev -->
         <div class="col-lg-5">
           <h2 class="h4 mb-4">Sekretariatet</h2>
           <div class="d-flex gap-3 mb-3">
-            <i class="bi bi-telephone fs-5 text-primary"></i>
-            <div><div class="fw-semibold">Telefon</div><a href="tel:+4720000000">+47 20 00 00 00</a></div>
+            <i class="bi bi-telephone fs-5" style="color:var(--red)"></i>
+            <div><div class="fw-bold">Telefon</div><a href="tel:+4720000000">+47 20 00 00 00</a></div>
           </div>
           <div class="d-flex gap-3 mb-3">
-            <i class="bi bi-envelope fs-5 text-primary"></i>
-            <div><div class="fw-semibold">E-post</div><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></div>
+            <i class="bi bi-envelope fs-5" style="color:var(--red)"></i>
+            <div><div class="fw-bold">E-post</div><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></div>
           </div>
           <div class="d-flex gap-3 mb-4">
-            <i class="bi bi-geo-alt fs-5 text-primary"></i>
-            <div><div class="fw-semibold">Besøksadresse</div>Storgata 1, 0155 Oslo</div>
+            <i class="bi bi-geo-alt fs-5" style="color:var(--red)"></i>
+            <div><div class="fw-bold">Besøksadresse</div>Storgata 1, 0155 Oslo</div>
           </div>
 
           <div class="value-card">
-            <h3 class="h6 mb-2"><i class="bi bi-envelope-paper me-2 text-primary"></i>Nyhetsbrev</h3>
+            <h3 class="h6 mb-2"><i class="bi bi-envelope-paper me-2" style="color:var(--red)"></i>Nyhetsbrev</h3>
             <p class="text-muted small">Få siste nytt om saker, arrangementer og medlemsfordeler.</p>
             <form class="row g-2" onsubmit="event.preventDefault(); this.reset(); alert('Takk! Du er nå påmeldt nyhetsbrevet.');">
               <div class="col-12">
@@ -137,7 +129,7 @@
                 <input type="email" class="form-control" id="nl-epost" placeholder="Din e-postadresse" required>
               </div>
               <div class="col-12 d-grid">
-                <button class="btn btn-navy" type="submit">Meld på</button>
+                <button class="btn btn-brand" type="submit">Meld på</button>
               </div>
             </form>
           </div>
@@ -147,44 +139,42 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer pt-5">
+  <footer class="site-footer stripes pt-5">
     <div class="container">
       <div class="row g-4 pb-4">
         <div class="col-lg-4">
-          <img src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet" class="mb-3">
-          <p class="small mb-3">Bransjeforeningen for små og mellomstore bedrifter innen norsk forsvar og sikkerhet.</p>
-          <div class="d-flex gap-2">
-            <a class="social-ico" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin text-white"></i></a>
-            <a class="social-ico" href="#" aria-label="Facebook"><i class="bi bi-facebook text-white"></i></a>
-            <a class="social-ico" href="#" aria-label="YouTube"><i class="bi bi-youtube text-white"></i></a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-2">
           <h6 class="mb-3">Om oss</h6>
           <ul class="list-unstyled small d-grid gap-2">
             <li><a href="index.html#om">Om foreningen</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
             <li><a href="index.html#saker">Våre saker</a></li>
             <li><a href="#">Styret</a></li>
             <li><a href="#">Presserom</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="mb-3">Medlemskap</h6>
+        <div class="col-6 col-lg-3">
+          <h6 class="mb-3">Medlemsfordeler</h6>
           <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="index.html#medlemsfordeler">Våre medlemsfordeler</a></li>
             <li><a href="index.html#medlemskap">Bli medlem</a></li>
-            <li><a href="index.html#medlemmer">Medlemmer</a></li>
-            <li><a href="index.html#nyhetsbrev">Nyhetsbrev</a></li>
           </ul>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-5">
           <h6 class="mb-3">Kontakt oss</h6>
           <p class="small mb-1"><i class="bi bi-telephone me-2"></i>+47 20 00 00 00</p>
           <p class="small mb-1"><i class="bi bi-envelope me-2"></i><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></p>
-          <p class="small mb-0"><i class="bi bi-geo-alt me-2"></i>Storgata 1, 0155 Oslo</p>
+          <p class="small mb-3"><i class="bi bi-geo-alt me-2"></i>Storgata 1, 0155 Oslo</p>
+          <img src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet" class="footer-logo mb-3">
+          <div class="d-flex gap-2">
+            <a class="social-ico" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="social-ico" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="social-ico" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-ico" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-        <span>© 2026 SMB Forsvar og Sikkerhet. Org.nr. 000 000 000</span>
+        <span>Copyright © SMB Forsvar og Sikkerhet 2026. Org.nr. 000 000 000</span>
         <a href="#">Personvernerklæring</a>
       </div>
     </div>

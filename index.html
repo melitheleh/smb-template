@@ -4,23 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SMB Forsvar og Sikkerhet – Sammen for et sterkt forsvar</title>
-  <meta name="description" content="Bransjeforeningen for små og mellomstore bedrifter innen forsvar og sikkerhet. Vi jobber for bedre rammevilkår, samarbeid og innovasjon i totalforsvaret.">
+  <meta name="description" content="Interesseorganisasjonen for små og mellomstore bedrifter innen forsvar og sikkerhet. Vi kjemper for bedre vilkår, samarbeid og innovasjon i totalforsvaret.">
   <link rel="icon" href="assets/img/logo.svg">
-  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/css/theme.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Topbar -->
-  <div class="topbar">
-    <div class="container d-flex justify-content-end align-items-center gap-3 py-2">
-      <a href="#"><i class="bi bi-search me-1"></i>Søk</a>
-      <a href="#"><i class="bi bi-person-circle me-1"></i>Logg inn</a>
-      <a class="btn btn-brand btn-sm px-3" href="#medlemskap">Bli medlem</a>
-    </div>
-  </div>
+  <!-- Tynn topplinje -->
+  <div class="topbar"></div>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
@@ -33,11 +26,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainnav">
         <ul class="navbar-nav align-items-lg-center">
-          <li class="nav-item"><a class="nav-link active" href="#saker">Våre saker</a></li>
-          <li class="nav-item"><a class="nav-link" href="#medlemmer">Medlemmer</a></li>
-          <li class="nav-item"><a class="nav-link" href="#medlemskap">Medlemskap</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#medlemsfordeler">Medlemsfordeler</a></li>
+          <li class="nav-item"><a class="nav-link" href="#saker">Våre saker</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nytt">Siste nytt</a></li>
           <li class="nav-item"><a class="nav-link" href="#om">Om oss</a></li>
           <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a class="btn btn-brand" href="#medlemskap">Bli medlem</a></li>
         </ul>
       </div>
     </div>
@@ -46,101 +40,113 @@
   <!-- Hero -->
   <header class="hero">
     <div class="container">
-      <div class="col-lg-8">
-        <p class="eyebrow mb-2">Bransjeforening for forsvar og sikkerhet</p>
-        <h1 class="mb-3">Sammen for et sterkt forsvar</h1>
-        <p class="mb-4">Vi samler små og mellomstore bedrifter som leverer teknologi, tjenester og løsninger til totalforsvaret. Målet er enklere rammevilkår, tettere samarbeid og raskere innovasjon – fra idé til leveranse.</p>
-        <div class="d-flex flex-wrap gap-3">
-          <a href="#medlemmer" class="btn btn-brand btn-lg px-4">Se medlemmer</a>
-          <a href="#medlemskap" class="btn btn-outline-brand btn-lg px-4">Bli medlem</a>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="eyebrow mb-3">Interesseorganisasjon for forsvar og sikkerhet</p>
+          <h1 class="mb-3">Sammen for et sterkt forsvar</h1>
+          <p class="lead mb-4">SMB Forsvar og Sikkerhet er interesseorganisasjonen for små og mellomstore bedrifter i forsvarssektoren. Vi kjemper for bedre vilkår, tettere samarbeid og raskere innovasjon – fra idé til leveranse.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#medlemskap" class="btn btn-brand btn-lg">Se priser for medlemskap</a>
+            <a href="#" class="btn btn-outline-ink btn-lg">Logg inn</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/hero.svg" class="hero-graphic" alt="">
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Medlemsstripe -->
-  <section class="member-strip py-4" id="medlemmer">
+  <!-- Medlemsfordeler (rødt felt) -->
+  <section class="band-red stripes section" id="medlemsfordeler">
     <div class="container">
-      <p class="text-center text-muted mb-4 small text-uppercase" style="letter-spacing:2px;">Et utvalg av våre medlemsbedrifter</p>
-      <div class="row g-3">
-        <div class="col-6 col-md-3"><div class="member-logo">NordSec AS</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Aegis Systems</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Fjord Defence</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Vaktor Tech</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Polaris Cyber</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Skjold Elektronikk</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Nordkapp Marine</div></div>
-        <div class="col-6 col-md-3"><div class="member-logo">Terra Logistikk</div></div>
+      <h2 class="mb-4 display-6 fw-bold">Medlemsfordeler</h2>
+      <div class="row g-4 g-lg-5">
+        <div class="col-md-4 feature">
+          <h3 class="h4">Påvirkning der det teller</h3>
+          <p>Vi taler medlemmenes sak overfor myndigheter og oppdragsgivere, og jobber for forutsigbare anskaffelser som gir plass til de mindre aktørene.</p>
+          <a class="more" href="#saker">Les om våre saker</a>
+        </div>
+        <div class="col-md-4 feature">
+          <h3 class="h4">Nettverk og kompetanse</h3>
+          <p>Møteplasser, kurs og arrangementer der medlemmene bygger relasjoner på tvers av land, sjø, luft og cyber – og finner nye samarbeid.</p>
+          <a class="more" href="#nytt">Se hva som skjer</a>
+        </div>
+        <div class="col-md-4 feature">
+          <h3 class="h4">Synlighet i bransjen</h3>
+          <p>Som medlem blir bedriften din synlig blant landets fremste leverandører til totalforsvaret, og får en tydeligere felles stemme.</p>
+          <a class="more" href="#medlemskap">Bli medlem</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Vårt oppdrag / Våre saker -->
-  <section class="section" id="saker">
+  <!-- Bli medlem-split -->
+  <section class="section">
     <div class="container">
-      <div class="row align-items-end mb-4">
-        <div class="col-lg-8">
-          <p class="eyebrow mb-2">Vårt oppdrag</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" id="saker">
+          <p class="eyebrow mb-3">Våre saker</p>
           <h2 class="mb-3">Vi kjemper for en enklere hverdag for SMB-ene i forsvarssektoren</h2>
-          <p class="lead mb-0">Små og mellomstore bedrifter er ryggraden i norsk forsvarsindustri. Vi er et dynamisk nettverk og en kunnskapsarena som fremmer samarbeid, kompetanseutvikling og erfaringsutveksling – slik at medlemmene våre står sterkere sammen.</p>
+          <p class="lead mb-4">Små og mellomstore bedrifter er ryggraden i norsk forsvarsindustri. Vi er et nettverk og en kunnskapsarena som styrker medlemmenes konkurransekraft og bransjens kompetanseforsyning.</p>
+          <a href="kontakt.html" class="btn btn-outline-ink">Les mer</a>
         </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="value-card">
-            <div class="icon"><i class="bi bi-megaphone fs-4"></i></div>
-            <h3 class="h5">Påvirkning</h3>
-            <p class="text-muted mb-0">Vi taler medlemmenes sak overfor myndigheter og oppdragsgivere, og jobber for forutsigbare anskaffelser og rammevilkår som gir plass til de mindre aktørene.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="value-card">
-            <div class="icon"><i class="bi bi-people fs-4"></i></div>
-            <h3 class="h5">Nettverk</h3>
-            <p class="text-muted mb-0">Vi kobler sammen entreprenører, produktspesialister og konsulenter på tvers av land, sjø, luft og cyber – for nye samarbeid og felles leveranser.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="value-card">
-            <div class="icon"><i class="bi bi-lightbulb fs-4"></i></div>
-            <h3 class="h5">Innovasjon</h3>
-            <p class="text-muted mb-0">Vi legger til rette for raskere teknologiutvikling og kortere vei fra idé til fungerende løsning for totalforsvaret.</p>
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="value-card">
+                <div class="icon"><i class="bi bi-megaphone fs-4"></i></div>
+                <h3 class="h6">Påvirkning</h3>
+                <p class="text-muted small mb-0">Bedre rammevilkår og anskaffelser.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card">
+                <div class="icon"><i class="bi bi-people fs-4"></i></div>
+                <h3 class="h6">Nettverk</h3>
+                <p class="text-muted small mb-0">Møteplasser på tvers av bransjen.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card">
+                <div class="icon"><i class="bi bi-lightbulb fs-4"></i></div>
+                <h3 class="h6">Innovasjon</h3>
+                <p class="text-muted small mb-0">Kortere vei fra idé til leveranse.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card">
+                <div class="icon"><i class="bi bi-shield-check fs-4"></i></div>
+                <h3 class="h6">Totalforsvaret</h3>
+                <p class="text-muted small mb-0">Land, sjø, luft og cyber.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Nyheter -->
-  <section class="section section-alt">
+  <!-- Siste nytt -->
+  <section class="section section-gray" id="nytt">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
-        <div>
-          <p class="eyebrow mb-2">Siste nytt</p>
-          <h2 class="mb-0">Nyheter fra foreningen</h2>
-        </div>
-        <a href="#" class="btn btn-navy">Alle nyheter</a>
-      </div>
+      <h2 class="mb-4 display-6 fw-bold">Siste nytt fra bransjen</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <article class="news-card">
-            <div class="thumb" style="background:linear-gradient(135deg,#1d4e8f,#12284c);"></div>
-            <div class="p-4">
-              <div class="d-flex justify-content-between mb-2">
-                <span class="tag">Foreningsnytt</span><span class="date">10.06.2026</span>
-              </div>
+            <div class="thumb" style="background:linear-gradient(135deg,#E8112D,#B00C20);"></div>
+            <div class="body">
+              <div class="tags"><span class="tag">Aktuelt</span><span class="tag">Forsvarspolitikk</span></div>
               <h3>Nytt høringssvar om eksport og felles sikkerhet</h3>
-              <p class="text-muted small mb-0">Vi har levert vårt høringssvar om et mer samlet og strategisk eksportfremme for forsvarsindustrien – med tydelige krav på vegne av de mindre bedriftene.</p>
+              <p class="text-muted small mb-0">Vi har levert vårt høringssvar om et mer samlet og strategisk eksportfremme – med tydelige krav på vegne av de mindre bedriftene.</p>
             </div>
           </article>
         </div>
         <div class="col-md-4">
           <article class="news-card">
-            <div class="thumb" style="background:linear-gradient(135deg,#2f6fd6,#1d4e8f);"></div>
-            <div class="p-4">
-              <div class="d-flex justify-content-between mb-2">
-                <span class="tag">Arrangement</span><span class="date">28.04.2026</span>
-              </div>
+            <div class="thumb" style="background:linear-gradient(135deg,#1C1C1C,#3a0a10);"></div>
+            <div class="body">
+              <div class="tags"><span class="tag">Aktuelt</span><span class="tag">Arrangement</span></div>
               <h3>Finalistene til Årets sikkerhetspris er klare</h3>
               <p class="text-muted small mb-0">Prisen løfter aktører som gjennom teknologi og samarbeid styrker Norges sikkerhet, motstandskraft og beredskap.</p>
             </div>
@@ -148,133 +154,116 @@
         </div>
         <div class="col-md-4">
           <article class="news-card">
-            <div class="thumb" style="background:linear-gradient(135deg,#12284c,#0d1f3c);"></div>
-            <div class="p-4">
-              <div class="d-flex justify-content-between mb-2">
-                <span class="tag">Medlemmer</span><span class="date">25.03.2026</span>
-              </div>
-              <h3>Bli kjent med medlemmene våre</h3>
-              <p class="text-muted small mb-0">I denne serien presenterer vi nye medlemsbedrifter, som forteller om virksomheten sin og hvorfor de er med i foreningen.</p>
+            <div class="thumb" style="background:linear-gradient(135deg,#E8112D,#1C1C1C);"></div>
+            <div class="body">
+              <div class="tags"><span class="tag">Medlemmer</span></div>
+              <h3>Bli kjent med medlemsbedriftene våre</h3>
+              <p class="text-muted small mb-0">I denne serien presenterer vi nye medlemmer, som forteller om virksomheten sin og hvorfor de er med i foreningen.</p>
             </div>
           </article>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Medlemskap CTA -->
-  <section class="section" id="medlemskap">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <p class="eyebrow mb-2">Medlemskap</p>
-          <h2 class="mb-3">Bli en del av bransjen</h2>
-          <p class="lead">Vi samler Norges fremste entreprenører, produktspesialister og konsulenter innen forsvar og sikkerhet. Som medlem får du innflytelse, nettverk og faglig påfyll – og en tydeligere stemme inn mot oppdragsgivere og myndigheter.</p>
-          <ul class="list-unstyled mt-4">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Påvirkning på rammevilkår og anskaffelser</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Tilgang til møteplasser, kurs og arrangementer</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Synlighet blant medlemsbedriftene</li>
-          </ul>
-          <a href="kontakt.html" class="btn btn-brand btn-lg px-4 mt-2">Meld interesse</a>
-        </div>
-        <div class="col-lg-6">
-          <div class="value-card">
-            <h3 class="h5 mb-3">Kort om medlemskapet</h3>
-            <p class="text-muted">Kontingenten tilpasses bedriftens størrelse. Ta kontakt med sekretariatet, så finner vi riktig nivå for dere og svarer på det dere lurer på.</p>
-            <div class="d-flex align-items-center gap-3 mt-3 pt-3 border-top">
-              <i class="bi bi-telephone fs-4 text-primary"></i>
-              <div><div class="fw-semibold">Ring sekretariatet</div><a href="tel:+4720000000">+47 20 00 00 00</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="mt-4"><a href="#" class="btn btn-outline-ink">Se mer</a></div>
     </div>
   </section>
 
   <!-- Om oss -->
-  <section class="section section-alt" id="om">
+  <section class="section" id="om">
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-8">
-          <p class="eyebrow mb-2">Om oss</p>
-          <h2 class="mb-3">Bransjeforeningen for SMB innen forsvar og sikkerhet</h2>
-          <p class="lead">Foreningen samler små og mellomstore bedrifter i norsk forsvars- og sikkerhetssektor. Vi arbeider for medlemmenes konkurransekraft og for en kontinuerlig kompetanseforsyning i bransjen – på tvers av land, sjø, luft og cyber.</p>
-          <a href="kontakt.html" class="btn btn-navy mt-2">Kontakt oss</a>
+          <p class="eyebrow mb-3">Om oss</p>
+          <h2 class="mb-3">Interesseorganisasjonen for SMB innen forsvar og sikkerhet</h2>
+          <p class="lead">Vi samler små og mellomstore bedrifter i norsk forsvars- og sikkerhetssektor, og arbeider for medlemmenes konkurransekraft og for en kontinuerlig kompetanseforsyning i bransjen.</p>
+          <a href="kontakt.html" class="btn btn-brand mt-2">Kontakt oss</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Newsletter -->
-  <section class="newsletter section" id="nyhetsbrev">
+  <!-- Medlemskap / CTA -->
+  <section class="cta-red stripes section" id="medlemskap">
     <div class="container">
       <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <h2 class="mb-2">Abonner på nyhetsbrevet vårt</h2>
-          <p class="mb-0" style="color:#cdd8ea;">Få siste nytt om saker, arrangementer og medlemsfordeler rett i innboksen.</p>
+        <div class="col-lg-8">
+          <p class="eyebrow mb-2" style="color:#fff;">Medlemskap</p>
+          <h2 class="mb-2 display-6 fw-bold">Bli en del av bransjen</h2>
+          <p class="mb-0" style="color:rgba(255,255,255,.92); max-width:46rem;">Kontingenten tilpasses bedriftens størrelse. Ta kontakt med sekretariatet, så finner vi riktig nivå for dere og svarer på det dere lurer på.</p>
         </div>
-        <div class="col-lg-6">
-          <form class="row g-2" onsubmit="event.preventDefault(); this.reset(); alert('Takk! Du er nå påmeldt nyhetsbrevet.');">
-            <div class="col-sm-8">
-              <label for="nl-email" class="visually-hidden">E-postadresse</label>
-              <input type="email" class="form-control form-control-lg" id="nl-email" placeholder="Din e-postadresse" required>
-            </div>
-            <div class="col-sm-4 d-grid">
-              <button class="btn btn-brand btn-lg" type="submit">Meld på</button>
-            </div>
-            <div class="col-12">
-              <div class="form-check mt-2">
-                <input class="form-check-input" type="checkbox" id="nl-consent" required>
-                <label class="form-check-label small" for="nl-consent" style="color:#cdd8ea;">
-                  Jeg samtykker til at opplysningene lagres i henhold til <a href="#" class="text-white text-decoration-underline">personvernerklæringen</a>.
-                </label>
+        <div class="col-lg-4 text-lg-end">
+          <a href="kontakt.html" class="btn btn-outline-light btn-lg">Meld interesse</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nyhetsbrev -->
+  <section class="section section-gray" id="nyhetsbrev">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="form-card text-center">
+            <h2 class="h3 mb-2">Meld deg på nyhetsbrevet vårt</h2>
+            <p class="text-muted mb-4">Få siste nytt om saker, arrangementer og medlemsfordeler rett i innboksen.</p>
+            <form class="row g-2 justify-content-center" onsubmit="event.preventDefault(); this.reset(); alert('Takk! Du er nå påmeldt nyhetsbrevet.');">
+              <div class="col-sm-7 text-start">
+                <label for="nl-email" class="visually-hidden">E-postadresse</label>
+                <input type="email" class="form-control form-control-lg" id="nl-email" placeholder="Din e-postadresse" required>
               </div>
-            </div>
-          </form>
+              <div class="col-sm-4 col-lg-3 d-grid">
+                <button class="btn btn-brand btn-lg" type="submit">Meld på</button>
+              </div>
+              <div class="col-12">
+                <div class="form-check d-inline-flex gap-2 mt-3 text-start">
+                  <input class="form-check-input" type="checkbox" id="nl-consent" required>
+                  <label class="form-check-label small text-muted" for="nl-consent">Jeg samtykker til at opplysningene lagres i henhold til <a href="#">personvernerklæringen</a>.</label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer pt-5">
+  <footer class="site-footer stripes pt-5">
     <div class="container">
       <div class="row g-4 pb-4">
         <div class="col-lg-4">
-          <img src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet" class="mb-3">
-          <p class="small mb-3">Bransjeforeningen for små og mellomstore bedrifter innen norsk forsvar og sikkerhet.</p>
-          <div class="d-flex gap-2">
-            <a class="social-ico" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin text-white"></i></a>
-            <a class="social-ico" href="#" aria-label="Facebook"><i class="bi bi-facebook text-white"></i></a>
-            <a class="social-ico" href="#" aria-label="YouTube"><i class="bi bi-youtube text-white"></i></a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-2">
           <h6 class="mb-3">Om oss</h6>
           <ul class="list-unstyled small d-grid gap-2">
             <li><a href="#om">Om foreningen</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
             <li><a href="#saker">Våre saker</a></li>
             <li><a href="#">Styret</a></li>
             <li><a href="#">Presserom</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-2">
-          <h6 class="mb-3">Medlemskap</h6>
+        <div class="col-6 col-lg-3">
+          <h6 class="mb-3">Medlemsfordeler</h6>
           <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="#medlemsfordeler">Våre medlemsfordeler</a></li>
             <li><a href="#medlemskap">Bli medlem</a></li>
-            <li><a href="#medlemmer">Medlemmer</a></li>
-            <li><a href="#nyhetsbrev">Nyhetsbrev</a></li>
           </ul>
+          <a href="#nyhetsbrev" class="btn btn-brand btn-sm mt-3">Meld deg på nyhetsbrevet <i class="bi bi-envelope ms-1"></i></a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-5">
           <h6 class="mb-3">Kontakt oss</h6>
           <p class="small mb-1"><i class="bi bi-telephone me-2"></i>+47 20 00 00 00</p>
           <p class="small mb-1"><i class="bi bi-envelope me-2"></i><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></p>
-          <p class="small mb-0"><i class="bi bi-geo-alt me-2"></i>Storgata 1, 0155 Oslo</p>
+          <p class="small mb-3"><i class="bi bi-geo-alt me-2"></i>Storgata 1, 0155 Oslo</p>
+          <img src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet" class="footer-logo mb-3">
+          <div class="d-flex gap-2">
+            <a class="social-ico" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="social-ico" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="social-ico" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a class="social-ico" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
-        <span>© 2026 SMB Forsvar og Sikkerhet. Org.nr. 000 000 000</span>
+        <span>Copyright © SMB Forsvar og Sikkerhet 2026. Org.nr. 000 000 000</span>
         <a href="#">Personvernerklæring</a>
       </div>
     </div>
