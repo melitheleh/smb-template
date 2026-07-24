@@ -18,8 +18,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo.svg" alt="SMB Forsvar og Sikkerhet">
+      <a class="navbar-brand" href="index.html" aria-label="SMB Forsvar og Sikkerhet">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="SMB Forsvar og Sikkerhet">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-label="Meny">
         <span class="navbar-toggler-icon"></span>
@@ -58,9 +58,9 @@
   </header>
 
   <!-- Medlemsfordeler (rødt felt) -->
-  <section class="band-red stripes section" id="medlemsfordeler">
+  <section class="band-red section" id="medlemsfordeler">
     <div class="container">
-      <h2 class="mb-4 display-6 fw-bold">Medlemsfordeler</h2>
+      <h2 class="mb-4 display-6 fw-semibold">Medlemsfordeler</h2>
       <div class="row g-4 g-lg-5">
         <div class="col-md-4 feature">
           <h3 class="h4">Påvirkning der det teller</h3>
@@ -130,11 +130,11 @@
   <!-- Siste nytt -->
   <section class="section section-gray" id="nytt">
     <div class="container">
-      <h2 class="mb-4 display-6 fw-bold">Siste nytt fra bransjen</h2>
+      <h2 class="mb-4 display-6 fw-semibold">Siste nytt fra bransjen</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <article class="news-card">
-            <div class="thumb" style="background:linear-gradient(135deg,#E8112D,#B00C20);"></div>
+            <div class="thumb" style="background:linear-gradient(135deg,#ED1C24,#B00C20);"></div>
             <div class="body">
               <div class="tags"><span class="tag">Aktuelt</span><span class="tag">Forsvarspolitikk</span></div>
               <h3>Nytt høringssvar om eksport og felles sikkerhet</h3>
@@ -154,7 +154,7 @@
         </div>
         <div class="col-md-4">
           <article class="news-card">
-            <div class="thumb" style="background:linear-gradient(135deg,#E8112D,#1C1C1C);"></div>
+            <div class="thumb" style="background:linear-gradient(135deg,#ED1C24,#1C1C1C);"></div>
             <div class="body">
               <div class="tags"><span class="tag">Medlemmer</span></div>
               <h3>Bli kjent med medlemsbedriftene våre</h3>
@@ -182,12 +182,12 @@
   </section>
 
   <!-- Medlemskap / CTA -->
-  <section class="cta-red stripes section" id="medlemskap">
+  <section class="cta-red section" id="medlemskap">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-lg-8">
           <p class="eyebrow mb-2" style="color:#fff;">Medlemskap</p>
-          <h2 class="mb-2 display-6 fw-bold">Bli en del av bransjen</h2>
+          <h2 class="mb-2 display-6 fw-semibold">Bli en del av bransjen</h2>
           <p class="mb-0" style="color:rgba(255,255,255,.92); max-width:46rem;">Kontingenten tilpasses bedriftens størrelse. Ta kontakt med sekretariatet, så finner vi riktig nivå for dere og svarer på det dere lurer på.</p>
         </div>
         <div class="col-lg-4 text-lg-end">
@@ -197,37 +197,8 @@
     </div>
   </section>
 
-  <!-- Nyhetsbrev -->
-  <section class="section section-gray" id="nyhetsbrev">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="form-card text-center">
-            <h2 class="h3 mb-2">Meld deg på nyhetsbrevet vårt</h2>
-            <p class="text-muted mb-4">Få siste nytt om saker, arrangementer og medlemsfordeler rett i innboksen.</p>
-            <form class="row g-2 justify-content-center" onsubmit="event.preventDefault(); this.reset(); alert('Takk! Du er nå påmeldt nyhetsbrevet.');">
-              <div class="col-sm-7 text-start">
-                <label for="nl-email" class="visually-hidden">E-postadresse</label>
-                <input type="email" class="form-control form-control-lg" id="nl-email" placeholder="Din e-postadresse" required>
-              </div>
-              <div class="col-sm-4 col-lg-3 d-grid">
-                <button class="btn btn-brand btn-lg" type="submit">Meld på</button>
-              </div>
-              <div class="col-12">
-                <div class="form-check d-inline-flex gap-2 mt-3 text-start">
-                  <input class="form-check-input" type="checkbox" id="nl-consent" required>
-                  <label class="form-check-label small text-muted" for="nl-consent">Jeg samtykker til at opplysningene lagres i henhold til <a href="#">personvernerklæringen</a>.</label>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="site-footer stripes pt-5">
+  <footer class="site-footer pt-5">
     <div class="container">
       <div class="row g-4 pb-4">
         <div class="col-lg-4">
@@ -246,14 +217,14 @@
             <li><a href="#medlemsfordeler">Våre medlemsfordeler</a></li>
             <li><a href="#medlemskap">Bli medlem</a></li>
           </ul>
-          <a href="#nyhetsbrev" class="btn btn-brand btn-sm mt-3">Meld deg på nyhetsbrevet <i class="bi bi-envelope ms-1"></i></a>
+          <a href="kontakt.html#nyhetsbrev" class="btn btn-brand btn-sm mt-3">Meld deg på nyhetsbrevet <i class="bi bi-envelope ms-1"></i></a>
         </div>
         <div class="col-lg-5">
           <h6 class="mb-3">Kontakt oss</h6>
           <p class="small mb-1"><i class="bi bi-telephone me-2"></i>+47 20 00 00 00</p>
           <p class="small mb-1"><i class="bi bi-envelope me-2"></i><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></p>
           <p class="small mb-3"><i class="bi bi-geo-alt me-2"></i>Storgata 1, 0155 Oslo</p>
-          <img src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet" class="footer-logo mb-3">
+          <img class="footer-logo mb-3" src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet">
           <div class="d-flex gap-2">
             <a class="social-ico" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a class="social-ico" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>

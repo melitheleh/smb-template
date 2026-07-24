@@ -6,11 +6,11 @@
    REBRANDING: endre kun variablene under :root for hver organisasjon.
    ===================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
 
 :root {
   /* Merkefarger – bytt disse per organisasjon */
-  --red:      #E8112D;   /* primær (SMB Norge-rød) */
+  --red:      #ED1C24;   /* primær (SMB Norge-rød) */
   --red-dark: #C20D24;   /* hover */
   --red-deep: #B00C20;   /* mørk stripe */
   --ink:      #1A1A1A;   /* overskrifter / brødtekst */
@@ -19,7 +19,7 @@
   --gray-100: #F4F4F5;   /* lyst seksjonsfelt */
   --line:     #e6e6e8;
 
-  --font-base: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-base: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 
   /* Bootstrap-overstyringer */
   --bs-primary: var(--red);
@@ -30,12 +30,12 @@
 
 body { font-family: var(--font-base); color: var(--ink); }
 
-h1,h2,h3,h4,h5,h6 { font-weight: 900; color: var(--ink); letter-spacing: -.02em; }
+h1,h2,h3,h4,h5,h6 { font-weight:600; color: var(--ink); letter-spacing: -.02em; }
 .lead { color: var(--muted); font-weight: 600; }
 a { color: var(--red); text-decoration: none; }
 a:hover { color: var(--red-dark); }
 
-.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size:.78rem; font-weight:800; color: var(--red); }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size:.78rem; font-weight:600; color: var(--red); }
 
 /* skrå-stripe-motiv (gjenbrukbart) */
 .stripes { position: relative; overflow: hidden; }
@@ -47,7 +47,7 @@ a:hover { color: var(--red-dark); }
 }
 
 /* ---------- Knapper (piller) ---------- */
-.btn { border-radius: 999px; font-weight: 800; padding: .62rem 1.6rem; }
+.btn { border-radius: 999px; font-weight:600; padding: .62rem 1.6rem; }
 .btn-lg { padding: .8rem 2rem; }
 
 .btn-brand { background: var(--red); border:2px solid var(--red); color:#fff; }
@@ -64,8 +64,8 @@ a:hover { color: var(--red-dark); }
 
 /* ---------- Navbar ---------- */
 .navbar { background:#fff; border-bottom:1px solid var(--line); padding:.7rem 0; }
-.navbar-brand img { height: 46px; width:auto; }
-.navbar .nav-link { color: var(--ink); font-weight: 800; padding-inline:.85rem; }
+.navbar-brand img, .navbar-brand .brand-logo { height: 46px; width:auto; display:block; }
+.navbar .nav-link { color: var(--ink); font-weight:600; padding-inline:.85rem; }
 .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--red); }
 
 /* ---------- Hero (lyst) ---------- */
@@ -85,7 +85,7 @@ a:hover { color: var(--red-dark); }
 .band-red .col-feature + .col-feature { }
 .feature h3 { border-top:2px solid rgba(255,255,255,.35); padding-top:1.2rem; margin-bottom:1rem; }
 .feature p { color: rgba(255,255,255,.92); }
-.feature a.more { color:#fff; font-weight:800; text-decoration:underline; text-underline-offset:4px; }
+.feature a.more { color:#fff; font-weight:600; text-decoration:underline; text-underline-offset:4px; }
 .feature a.more:hover { color:#fff; opacity:.85; }
 
 /* ---------- Nyhetskort ---------- */
@@ -93,12 +93,12 @@ a:hover { color: var(--red-dark); }
 .news-card .thumb { height:190px; background-size:cover; background-position:center; }
 .news-card .body { padding:1.5rem; }
 .news-card .tags { display:flex; gap:1rem; margin-bottom:.75rem; }
-.news-card .tag { font-size:.72rem; font-weight:900; color:var(--red); text-transform:uppercase; letter-spacing:1px; border-bottom:2px solid var(--red); padding-bottom:2px; }
+.news-card .tag { font-size:.72rem; font-weight:600; color:var(--red); text-transform:uppercase; letter-spacing:1px; border-bottom:2px solid var(--red); padding-bottom:2px; }
 .news-card h3 { font-size:1.15rem; }
 
 /* ---------- Verdikort ---------- */
 .value-card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:2rem; height:100%; }
-.value-card .icon { width:54px;height:54px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(232,17,45,.10); color:var(--red); margin-bottom:1rem; }
+.value-card .icon { width:54px;height:54px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(237,28,36,.10); color:var(--red); margin-bottom:1rem; }
 
 /* ---------- CTA-rødt felt ---------- */
 .cta-red { background: var(--red); color:#fff; }
@@ -106,24 +106,35 @@ a:hover { color: var(--red-dark); }
 
 /* ---------- Skjema ---------- */
 .form-card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:2.25rem; }
-.form-label { font-weight:800; color: var(--ink); }
+.form-label { font-weight:600; color: var(--ink); }
 .form-control, .form-select { border-radius:10px; padding:.7rem .9rem; }
-.form-control:focus, .form-select:focus { border-color: var(--red); box-shadow:0 0 0 .2rem rgba(232,17,45,.15); }
+.form-control:focus, .form-select:focus { border-color: var(--red); box-shadow:0 0 0 .2rem rgba(237,28,36,.15); }
 
 /* ---------- Sidehode ---------- */
 .page-head { background: var(--gray-100); border-bottom:1px solid var(--line); padding:3.5rem 0; }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--black); color:#b8b8bb; }
-.site-footer::before { background: repeating-linear-gradient(115deg, transparent 0 70px, rgba(232,17,45,.12) 70px 150px); }
-.site-footer a { color:#b8b8bb; }
+.site-footer { background:#1C1C1C; color:#c2c2c5; position:relative; overflow:hidden; }
+.site-footer::before {
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background:url('../img/mark-red.svg') no-repeat center center;
+  background-size:auto 220%;   /* større enn footeren */
+  opacity:.15;
+}
+.site-footer a { color:#c2c2c5; }
 .site-footer a:hover { color:#fff; }
-.site-footer h6 { color:#fff; text-transform:uppercase; letter-spacing:1.5px; font-size:.82rem; font-weight:900; }
-.site-footer .footer-logo { height:42px; }
+.site-footer h6 { color:#fff; text-transform:uppercase; letter-spacing:1.5px; font-size:.82rem; font-weight:600; }
+.site-footer .footer-logo { height:42px; width:auto; }
 .footer-bottom { border-top:1px solid rgba(255,255,255,.12); font-size:.82rem; color:#8f8f92; }
 .social-ico { width:34px;height:34px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08); color:#fff; }
 .social-ico:hover { background: var(--red); color:#fff; }
 
-/* position for stripes overlay content */
-.band-red, .cta-red { position:relative; }
+/* position + merke-vannmerke på røde felt */
+.band-red, .cta-red { position:relative; overflow:hidden; }
+.band-red::after, .cta-red::after {
+  content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+  background: url('../img/mark-white.svg') no-repeat right -40px center;
+  background-size: auto 155%;
+  opacity:.10;
+}
 .band-red > .container, .cta-red > .container, .site-footer > .container { position:relative; z-index:1; }

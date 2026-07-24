@@ -17,8 +17,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo.svg" alt="SMB Forsvar og Sikkerhet">
+      <a class="navbar-brand" href="index.html" aria-label="SMB Forsvar og Sikkerhet">
+        <img class="brand-logo" src="assets/img/logo.svg" alt="SMB Forsvar og Sikkerhet">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav" aria-label="Meny">
         <span class="navbar-toggler-icon"></span>
@@ -109,18 +109,18 @@
           <h2 class="h4 mb-4">Sekretariatet</h2>
           <div class="d-flex gap-3 mb-3">
             <i class="bi bi-telephone fs-5" style="color:var(--red)"></i>
-            <div><div class="fw-bold">Telefon</div><a href="tel:+4720000000">+47 20 00 00 00</a></div>
+            <div><div class="fw-semibold">Telefon</div><a href="tel:+4720000000">+47 20 00 00 00</a></div>
           </div>
           <div class="d-flex gap-3 mb-3">
             <i class="bi bi-envelope fs-5" style="color:var(--red)"></i>
-            <div><div class="fw-bold">E-post</div><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></div>
+            <div><div class="fw-semibold">E-post</div><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></div>
           </div>
           <div class="d-flex gap-3 mb-4">
             <i class="bi bi-geo-alt fs-5" style="color:var(--red)"></i>
-            <div><div class="fw-bold">Besøksadresse</div>Storgata 1, 0155 Oslo</div>
+            <div><div class="fw-semibold">Besøksadresse</div>Storgata 1, 0155 Oslo</div>
           </div>
 
-          <div class="value-card">
+          <div class="value-card" id="nyhetsbrev">
             <h3 class="h6 mb-2"><i class="bi bi-envelope-paper me-2" style="color:var(--red)"></i>Nyhetsbrev</h3>
             <p class="text-muted small">Få siste nytt om saker, arrangementer og medlemsfordeler.</p>
             <form class="row g-2" onsubmit="event.preventDefault(); this.reset(); alert('Takk! Du er nå påmeldt nyhetsbrevet.');">
@@ -139,7 +139,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer stripes pt-5">
+  <footer class="site-footer pt-5">
     <div class="container">
       <div class="row g-4 pb-4">
         <div class="col-lg-4">
@@ -164,7 +164,7 @@
           <p class="small mb-1"><i class="bi bi-telephone me-2"></i>+47 20 00 00 00</p>
           <p class="small mb-1"><i class="bi bi-envelope me-2"></i><a href="mailto:post@smb-forsvar.no">post@smb-forsvar.no</a></p>
           <p class="small mb-3"><i class="bi bi-geo-alt me-2"></i>Storgata 1, 0155 Oslo</p>
-          <img src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet" class="footer-logo mb-3">
+          <img class="footer-logo mb-3" src="assets/img/logo-white.svg" alt="SMB Forsvar og Sikkerhet">
           <div class="d-flex gap-2">
             <a class="social-ico" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a class="social-ico" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
